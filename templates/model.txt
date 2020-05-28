@@ -1,0 +1,30 @@
+import { DataTypes } from 'sequelize';
+import { db } from '../connection';
+
+
+export class ${MODEL_NAME} extends Model {
+    public id: number;
+    public readonly createdAt: Date;
+    public readonly updatedAt: Date;
+
+}
+
+${MODEL_NAME}.init({
+
+    id: {
+        type: new DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    createdAt: {
+        type: new DataTypes.DATE
+    },
+    updatedAt: {
+        type: new DataTypes.DATE
+    },
+}, 
+{
+    tableName: '${TABLE_NAME}',
+    sequelize: db
+});
+

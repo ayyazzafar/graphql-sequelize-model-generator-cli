@@ -1,0 +1,13 @@
+import {Query} from './query'
+import { Mutation } from "./mutation";
+import { TypeResolvers } from './types';
+import { Subscription } from './subscription';
+
+export const resolvers = {
+
+    Query,
+    Mutation,
+    Subscription,
+    ...TypeResolvers
+
+}

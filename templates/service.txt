@@ -1,0 +1,21 @@
+import { ${MODEL_NAME} } from '../sequelize/models/${MODEL_NAME}';
+class ${MODEL_NAME}Service {
+
+
+    create(values: { creatorUserId: number, start: string, title: string, end: string }) {
+
+        let model: ${MODEL_NAME} = new ${MODEL_NAME}();
+        //model.title = values.title;
+        return model.save();
+    }
+
+    delete(id) {
+        return ${MODEL_NAME}.destroy({
+            where: { id }
+        })
+    }
+
+}
+
+export let ${MODEL_NAME_LOWERCASE}Service: ${MODEL_NAME}tService = new ${MODEL_NAME}Service()
+
