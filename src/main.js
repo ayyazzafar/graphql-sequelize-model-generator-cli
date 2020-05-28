@@ -91,6 +91,7 @@ async function createGrphqlStructure(options) {
     await  replaceFileContent('src/Public/graphql/' + options.name+'/resolvers/query/sample-query.resolver.ts', options.name);
 
     await  replaceFileContent('src/Public/graphql/' + options.name+'/resolvers/subscription/sample.subscription.resolver.ts', options.name);
+    await  replaceFileContent('src/Public/graphql/' + options.name+'/resolvers/subscription/index.ts', options.name);
 
   });
 }
