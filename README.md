@@ -1,22 +1,14 @@
-# `@dkundel/create-project`
+# `@ayyaz/create-model`
 
-🏗 Personal CLI to bootstrap new projects
+🏗 Personal CLI to bootstrap new models
 
 ## Installation & Usage
 
 ```bash
-npm init @dkundel/project
+npm init @ayyaz/create-model
 # or
-npx @dkundel/create-project
+npx @ayyaz/create-model
 # or
-npm install -g @dkundel/create-project
-create-project
+npm install -g @ayyaz/create-model
+create-model
 ```
-
-## License
-
-MIT
-
-## Collaborators
-
-- Dominik Kundel <hi@dominik.dev>
